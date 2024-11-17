@@ -1,1 +1,58 @@
-/* You can add global styles to this file, and also import other style files */
+/* styles.scss */
+@import 'colors.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $primary-bg-color;
+  color: $primary-text-color;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+.header {
+  text-align: center;
+  padding: 20px 0;
+  background-color: $dark-blue;
+  color: $button-text-color;
+}
+
+.primary-button {
+  background-color: $primary-button-bg;
+  color: $button-text-color;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+  transition: background-color 0.3s;
+}
+
+.secondary-button {
+  background-color: $secondary-button-bg;
+  color: $button-text-color;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.primary-button:hover {
+  background-color: darken($primary-button-bg, 10%);
+}
+
+.secondary-button:hover {
+  background-color: darken($secondary-button-bg, 10%);
+}
+
+.footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: $dark-blue;
+  color: $button-text-color;
+}
